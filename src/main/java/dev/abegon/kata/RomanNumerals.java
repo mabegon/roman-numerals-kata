@@ -2,29 +2,6 @@ package dev.abegon.kata;
 
 public class RomanNumerals {
 
-    private enum Numeral {
-        I("I"), //1
-        V("V"), //5
-        X("X"), //10
-        L("L"), //50
-        C("C"), //100
-        D("D"), //500
-        M("M"), //1000
-        MV("V'"), //5000
-        MX("X'"); //10000
-
-        private String name;
-
-        Numeral(String name) {
-            this.name = name;
-        }
-
-        public String toString(){
-            return  name;
-        }
-
-    }
-
     public static String arabicToRoman(int arabic) {
         StringBuilder response = new StringBuilder();
 
@@ -73,5 +50,12 @@ public class RomanNumerals {
                 break;
         }
         return response.toString();
+    }
+
+
+    public static int romanToArabic(String romanNumber){
+        int response = 1;
+
+        return response;
     }
 }
