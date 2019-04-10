@@ -57,4 +57,40 @@ public class RomanNumeralsTest {
         assertEquals("XIV", RomanNumerals.arabicToRoman(14));
     }
 
+    @Test
+    public void Should_return_XL_when_input_is_40()
+    {
+        assertEquals("XL", RomanNumerals.arabicToRoman(40));
+    }
+
+    @Test
+    public void Should_return_L_when_input_is_50()
+    {
+    assertEquals("L", RomanNumerals.arabicToRoman(50));
+    }
+
+    @Test
+    public void Should_return_XC_when_input_is_90()
+    {
+    assertEquals("XC", RomanNumerals.arabicToRoman(90));
+    }
+
+    @Test
+    public void Should_return_C_when_input_is_100()
+    {
+    assertEquals("C", RomanNumerals.arabicToRoman(100));
+    }
+
+    @Test
+    public void Should_return_M_when_input_is_1000()
+    {
+    assertEquals("M", RomanNumerals.arabicToRoman(1000));
+    }
+
+    @Test
+    public void Should_return_MMM_when_input_is_3000()
+    {
+        assertEquals("MMM", RomanNumerals.arabicToRoman(3000));
+    }
+
 }
